@@ -1,0 +1,202 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+box-sizing: inherit;
+}
+p, a{
+    font-size: 2rem;
+}
+h1, h2, h3 ,h4{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+h4{
+    font-size: 2rem;
+}
+img{
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 0 10rem 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #00a2ff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stripe-blue {
+    background-color: #00a2ff;
+    padding: 2rem;
+}
+.stripe-gray{
+    background-color: rgb(194, 194, 194);
+    padding: .05rem;
+    margin: 0 3rem;
+}
+.logo img {
+    max-width: 50px; /* Ancho máximo del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    margin-right: 20px; /* Espacio entre los iconos */
+    font-size: 32px; /* Tamaño de los iconos */
+}
+
+.social-icon.twitter i {
+    color: white; /* Color blanco para el logo de Twitter */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.created-by {
+    margin-top: 20px; /* Espacio entre los iconos y el texto */
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+.main {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f2f2f2;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #ff8800;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin: 10rem 0;
+}
+.btn:hover {
+    text-decoration: none;
+    background-color: #e97c00;
+}
+
+.faq{
+    padding: 3rem;
+}
+
+.contacto {
+    background-color: #f1c40f;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-icon.telegram {
+    background-image: url('ruta-del-icono-de-telegram.png');
+}
+
+.social-icon.twitter {
+    background-image: url('ruta-del-icono-de-twitter.png');
+}
+
+footer {
+    background-color: #0099ff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icon {
+    margin-right: 20px; /* Espacio entre los iconos */
+    font-size: 32px; /* Tamaño de los iconos */
+    transition: transform 0.2s ease;
+}
+.social-icon:hover{
+    margin-right: 20px; /* Espacio entre los iconos */
+    font-size: 32px; /* Tamaño de los iconos */
+    transform: scale(1.15);
+}
+
+.social-icon.twitter i {
+    color: white; /* Color blanco para el logo de Twitter */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+.roadmap {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gif {
+    max-width: 15rem;
+    height: auto;
+}
